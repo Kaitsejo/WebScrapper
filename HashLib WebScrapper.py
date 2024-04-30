@@ -4,7 +4,7 @@ import webbrowser
 import hashlib as h
 
 # Send a GET request using the session
-res = requests.get("http://challenges.ringzer0team.com:10013/", cookies={'PHPSESSID':"2jb43e3m489n7hpih5vfjgeotg"})
+res = requests.get("http://challenges.ringzer0team.com:10013/", cookies={'PHPSESSID':"2jb43e3m489n7hpih5vfjgeotg"}) #use document.cookie in devtool
 
 # Parse the HTML response using BeautifulSoup
 soup = bs4.BeautifulSoup(res.text,"lxml")
